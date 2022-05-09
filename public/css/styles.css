@@ -1,0 +1,419 @@
+.reg-page{
+    display: flex;
+}
+
+.homimg{
+  width: 30%;
+  height: 5%;
+  border-radius: 50%;
+}
+ .final{
+   background-color:#ff4c68;
+    padding: 20%;
+    color:#000 ;
+ }
+ .pa{
+   color:#000;
+ }
+
+.container{
+  margin-top: -15%;
+}
+
+/* .log{
+  background-color: #ff4c68;
+} */
+.log{
+  margin:0;
+  padding:0;
+  background: radial-gradient(#a429bc,#9225a7,#7f2092);
+  height:100vh;
+  overflow: hidden;
+  font-family: 'Noto Sans TC',sans-serif;
+}
+.cent{
+  width: 430px;
+  margin: 130px auto;
+  position: relative;
+}
+.cent form{
+  position: absolute;
+  background: white;
+  width: 100%;
+  padding: 50px 10px 0 30px;
+  box-sizing: border-box;
+  border:1px solid #6d1c7d;
+  border-radius: 0 0 5px 5px;
+}
+form input{
+  height: 50px;
+  width: 90%;
+  padding: 0 10px;
+  border-radius: 3px;
+  border:1px solid silver;
+  font-size: 18px;
+  outline: none;
+}
+form input[type="password"]{
+  margin-top: 20px;
+}
+form input[type="submit"]{
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 130px;
+  height: 45px;
+  color: white;
+  cursor: pointer;
+  line-height: 45px;
+  border-radius: 45px;
+  border-radius: 5px;
+  background: #5c1769;
+}
+
+
+.cent .heading{
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  padding: 25px 0 30px 25px;
+  background: #5c1769;
+  border-bottom: 1px solid #370e3f;
+  border-radius: 5px 5px 0 0;
+}
+
+
+
+
+
+.body{
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 23px;
+}
+
+/* header's css */
+.h{
+    align-items: center;
+    font-family: 'Goldman', cursive;
+    text-align: center;
+    font-size: 52px;
+}
+
+.H{
+    align-items: center;
+    font-family: 'Goldman', cursive;
+    text-align: center;
+    font-size: 16px;
+    color: #eaa6a6;
+}
+
+.header{
+    margin: 10px;
+    border-radius: 40px;
+    background-color: #9f1e15;
+}
+
+/* left and right container css */
+.left-container{
+    width: 50%;
+    /* background-color: rgb(0, 0, 0);
+    border-radius: 20px; */
+}
+
+.right-container img{
+    height: 45%;
+    width: 25%;
+    position: absolute;
+    bottom: 30%;
+    left: 60%;
+    border-radius: 50%;
+}
+
+/* Two horizontal inputs make constitute a 'set'  */
+.set{
+    display: flex;
+    width: 90%;
+    padding: 20px;
+    margin: 10px 0;
+    justify-content: space-between;
+    font-family: 'Goldman', cursive;
+    /* border: 2px solid white; -> uncomment this line to know what set class constitutes*/
+}
+
+/* CSS for input areas */
+.name label,.prescription label, .email label, .dob label, .gender label, .phone label{
+    width: 195px;
+    margin-bottom: 5px;
+    display: block;
+    color: #f76868;
+}
+
+
+.left-container .resume{
+    align-items: center;
+    display: grid;
+    grid-template-areas: ". .";
+}
+
+.left-container .name, .dob, .email,.prescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name input, .phone input,.prescription select, .email input, .dob input{
+    border: none;
+    border-radius: 6px;
+    height: 25px;
+    width: 100%;
+}
+
+/* CSS for gender selection */
+.selection{
+    background: rgb(151 35 35);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.selection label{
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: 0.2s all ease-in-out;
+    width: 80px;
+    color: black;
+}
+
+.selection input[type=radio]{
+    display: none;
+}
+
+.selection input[type=radio]:checked + label{
+    background: #e8665b;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Button CSS */
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+
+#apply{
+    background-color: brown;
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    font-size: 20px;
+    width: 350px;
+    color: white;
+    cursor: pointer;
+}
+
+#apply:hover{
+    background-color: rgb(214, 19, 19);
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    font-size: 20px;
+    width: 350px;
+    color: rgb(219, 209, 209);
+}
+
+
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #8f8f8f;
+}
+
+
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+
+.container-fluid{
+  padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Title Image */
+
+.title-image {
+  width: 70%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  left: 22%;
+
+}
+
+/* Features Section */
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Testimonial Section */
+
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* CTA Section */
+
+
+/* Footer Section */
+
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  /* .title-image {
+    position: static;
+    transform: rotate(0);
+  } */
+}
+
+#footer{
+  color:'Black';
+} */

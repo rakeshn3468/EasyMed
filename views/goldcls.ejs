@@ -1,0 +1,82 @@
+<%- include('partials/header') %>
+
+
+<body class=body>
+<header class=header>
+  <h1 class="h">Welcome to EasyMed</h1>
+  <h3 class="H">The world class treatement at one place.</h3>
+</header>
+
+
+<form  action="/apply" method="post">
+
+<div class="reg-page">
+  <div class="left-container">
+
+
+    <div class="set">
+      <div class="name">
+        <label for="name">Full name</label>
+        <input autofocus type="text" name="full_name" placeholder="Your full name" id="full-name" required>
+      </div>
+      <div class="prescription">
+        <!-- <button id="prescription-button"></button> -->
+        <label for="Pick a department">&nbsp;Pick a Department</label>
+        <select class="sel" name="type" >
+          <option>Full body checkup</option>
+          <option>Therapy</option>
+        </select>
+      </div>
+    </div>
+    <div class="set">
+      <div class="email">
+        <label for="email-id">Email ID:</label>
+        <input type="text" name="email" id="email-id" placeholder="Ex: abcd@example.com" required>
+      </div>
+      <div class="dob">
+          <label for="dob">Date of appointment:</label>
+          <input type="date" id="dob" name="date" required />
+     </div>
+    </div>
+    <div class="set">
+      <div class="phone">
+        <label for="phone-number">Age:</label>
+        <input type="number" name="age" id="phone-number" placeholder="age" required>
+      </div>
+      <div class="gender">
+          <label for="gender">Gender:</label>
+          <div class="selection">
+              <input checked="" id="gender-female" name="gender" type="radio" value="female"/>
+              <label for="gender-female">Female</label>
+              <input id="gender-male" name="gender" type="radio" value="male" />
+              <label for="gender-male">Male</label>
+          </div>
+      </div>
+
+    </div>
+    <div class="set">
+      <div class="phone">
+        <label for="phone-number">Contact Number:</label>
+        <input type="text" name="phone" id="phone-number" placeholder="Ex: +91-1234567890" required>
+      </div>
+       </div>
+
+       <!-- submit button -->
+       <div class="button">
+           <button id="apply" name="button">Apply</button>
+       </div>
+     </div>
+     <div class="right-container">
+            <img src="https://www.pngitem.com/pimgs/m/96-969204_physician-of-symbol-as-vector-caduceus-doctors-clipart.png" alt="SpaceX" />
+        </div>
+
+  </div>
+</form>
+
+</body>
+
+
+
+
+
+<%- include('partials/footer') %>

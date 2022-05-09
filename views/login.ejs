@@ -1,0 +1,46 @@
+<%- include('partials/header') %>
+<body class="log">
+
+
+<div class="cent">
+  <h1 class="heading">Login</h1>
+
+  <!-- <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body-log"> -->
+
+          <!-- Makes POST request to /login route -->
+          <form action="/login" method="POST">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input required type="email" autofocus class="form-control" name="username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input required type="password" class="form-control" name="password">
+            </div>
+            <input type="submit"  value="sign in">
+
+            <!-- <button type="submit" class="btn btn-dark">Login</button> -->
+          </form>
+
+        </div>
+      <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <a class="btn btn-block" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+            Sign In with Google
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+  <!-- </div> -->
+<!-- </div> -->
+</body>
+<%- include('partials/footer') %>
