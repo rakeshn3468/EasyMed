@@ -2,6 +2,7 @@ const express=require("express");
 const mongoose=require("mongoose");
 const bodyparser=require("body-parser");
 const app=express();
+const port=process.env.PORT || 3000;
 const ejs=require('ejs');
 app.set('view engine','ejs')
 app.use(bodyparser.urlencoded({extended:true}));
@@ -111,6 +112,6 @@ app.post("/login",function(req,res){
 
 
 
-app.listen(3000,function(){
-  console.log('Server Started at port 3000');
+app.listen(port,function(){
+  console.log('Server Started at port ${port}');
 });
